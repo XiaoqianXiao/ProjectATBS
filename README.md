@@ -12,7 +12,7 @@ Mainly base on fmriprep (https://fmriprep.readthedocs.io/en/stable/usage.html).
 * get rid of: 1) non steady volumes; and 2) fd > .2 volumes.
 4. bash S04_Denoise_glm.sh
 *  nuisance signal regression with signals from white matter and cerebrospinal fluid on results after ICA-AROMA.
-## nilearn was use for further analysis.  
+## nilearn was used for further analysis.  
 brain_masker = NiftiMapsMasker(
         maps_img=atlas_filename, memory='nilearn_cache', verbose=5,
         smoothing_fwhm=6,
